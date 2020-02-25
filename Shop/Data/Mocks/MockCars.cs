@@ -25,7 +25,7 @@ namespace Shop.Data.Mocks
                         price = 45000, 
                         isFavourite = true, 
                         available = true, 
-                        Category = _categoryCars.AllCagegories.First() 
+                        Category = _categoryCars.AllCategories.First() 
                     }                    
                 };
             }

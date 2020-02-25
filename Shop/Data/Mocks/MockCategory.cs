@@ -9,7 +9,7 @@ namespace Shop.Data.Mocks
 {
     public class MockCategory : ICarsCategory
     {
-        public IEnumerable<Category> AllCagegories { 
+        public IEnumerable<Category> AllCategories { 
             get 
             {
                 return new List<Category> 
