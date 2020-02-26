@@ -1,22 +1,7 @@
-﻿@using Shop.Data.Models
-@model IEnumerable<Car>
-
-@{
-    Layout = null;
-}
-
-<!DOCTYPE html>
-
-<html>
-<head>
-    <meta name="viewport" content="width=device-width" />
-    <title>List</title>
-</head>
-<body>
-    <h1>Все Автомобили</h1>
-    <h3>@ViewBag.Category</h3>
+﻿<h1>Все Автомобили</h1>
+    <h3>@Model.carCategory</h3>
     @{
-        foreach (var car in Model)
+        foreach (var car in Model.allCars)
         {
             <div>
                 <h2> Модель: @car.name </h2>
@@ -25,5 +10,3 @@
 
         }
     }
-</body>
-</html>
