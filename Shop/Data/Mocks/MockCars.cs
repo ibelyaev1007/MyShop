@@ -20,13 +20,36 @@ namespace Shop.Data.Mocks
                     { 
                         name = "Tesla Model S", 
                         shortDesc = "Быстрый автомобиль", 
-                        img = "https://upload.wikimedia.org/wikipedia/commons/4/4f/Tesla_Model_S_02_2013.jpg", 
+                        img = "/img/tesla.jpg", 
                         longDesc = "Красивый, быстрый и очень тихий автомобиль компании Telsa", 
                         price = 45000, 
                         isFavourite = true, 
                         available = true, 
                         Category = _categoryCars.AllCategories.First() 
-                    }                    
+                    },
+                    new Car
+                    {
+                        name = "Lada Vesta",
+                        shortDesc = "Тихий спокойный",
+                        img = "/img/vesta.jpg",
+                        longDesc = "Удобный автомобиль для городской жизни",
+                        price = 10000,
+                        isFavourite = false,
+                        available = true,
+                        Category = _categoryCars.AllCategories.Last()
+                    },
+                    new Car
+                    {
+                        name = "Nissan Leaf",
+                        shortDesc = "Городской автомобиль",
+                        img = "/img/leaf.jpg",
+                        longDesc = "Городской элекромобиль, очень удобный",
+                        price = 20000,
+                        isFavourite = true,
+                        available = true,
+                        Category = _categoryCars.AllCategories.First()
+                    }
+
                 };
             }
                 
