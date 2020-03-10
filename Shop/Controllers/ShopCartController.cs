@@ -1,21 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Linq;
 using Microsoft.AspNetCore.Mvc;
+using Shop.Data.interfaces;
 using Shop.Data.Models;
-using Shop.Data.Repository;
 using Shop.ViewModels;
 
 namespace Shop.Controllers
 {
     public class ShopCartController : Controller
     {
-        private readonly CarRepository _carRep;
+        private readonly IAllCars _carRep;
 
         private readonly ShopCart _shopCart;
 
-        public ShopCartController(CarRepository carRep, ShopCart shopCart)
+        public ShopCartController(IAllCars carRep, ShopCart shopCart)
         {
             _carRep = carRep;
             _shopCart = shopCart;
