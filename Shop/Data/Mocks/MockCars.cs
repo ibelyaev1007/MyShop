@@ -40,6 +40,17 @@ namespace Shop.Data.Mocks
                     },
                     new Car
                     {
+                        name = "Lada Granta",
+                        shortDesc = "Городской, простой автомобиль",
+                        img = "/img/granta.jpg",
+                        longDesc = "Удобный автомобиль легко ремонтировать",
+                        price = 25000,
+                        isFavourite = false,
+                        available = true,
+                        Category = _categoryCars.AllCategories.Last()
+                    },
+                    new Car
+                    {
                         name = "Nissan Leaf",
                         shortDesc = "Городской автомобиль",
                         img = "/img/leaf.jpg",
