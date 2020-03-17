@@ -19,7 +19,7 @@ namespace Shop.Data
 
             if (!content.Car.Any())
             {
-                content.AddRange(
+                content.Car.AddRange(
                     new Car
                     {
                         name = "Tesla Model S",
