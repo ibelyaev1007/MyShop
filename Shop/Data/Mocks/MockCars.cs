@@ -65,7 +65,7 @@ namespace Shop.Data.Mocks
             }
                 
         }
-        public IEnumerable<Car> getFavsCars { get; set; }
+        public IEnumerable<Car> getFavsCars => Cars.Where(p => p.isFavourite);
 
         public Car getObjectCar(int carID)
         {

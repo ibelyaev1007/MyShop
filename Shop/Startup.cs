@@ -13,6 +13,7 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Shop.Data;
 using Shop.Data.interfaces;
+using Shop.Data.Interfaces;
 using Shop.Data.Mocks;
 using Shop.Data.Models;
 using Shop.Data.Repository;
@@ -37,6 +38,8 @@ namespace Shop
             //services.AddTransient<ICarsCategory, MockCategory>();
             services.AddTransient<IAllCars, CarRepository>();
             services.AddTransient<ICarsCategory, CategoryRepository>();
+            services.AddTransient<IAllOrders, OrdersRepository>();
+
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddScoped(sp => ShopCart.GetCart(sp));
 
